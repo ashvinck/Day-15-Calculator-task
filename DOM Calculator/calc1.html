@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+</head>
+<body>
+  <h1 id="title">DOM Calculator</h1>
+  <p id="description">This is a basic calculator with memory functions</p>
+  
+<div class="calculator_wrap" id = "calculator">
+  
+  <!-- output display -->
+  <div class="show_num">
+    <div class="num_save" id="numSave"></div>
+    <div class="num_cur" id="numCur">0</div>
+    <div class="show_m" id="showM">M</div>
+  </div>
+  
+
+
+  <!-- input numbers -->
+  <div class="calculator__keys" id = "calculatorKeys">
+
+    <button class="calculator__key operator" data-key="MC">MC</button>
+    <button class="calculator__key operator" data-key="MR">MR</button>
+    <button class="calculator__key operator" data-key="MS">MS</button>
+    <button class="calculator__key operator" data-key="MA">M+</button>
+    <button class="calculator__key operator" data-key="ML">M-</button>
+
+    <button class="calculator__key backspace" data-key="BACK">&#x2190</button>
+    <button class="calculator__key calculator-reset" data-key="CE">CE</button>
+    <button class="calculator__key calculator-reset"data-key="Clear">C</button>
+    <button class="calculator__key operator" data-key="Negate">&#xb1;</button>
+    <button class="calculator__key operator" data-key="Square">&#x221a;</button>
+  
+    <button class="calculator__key number" data-key="Num" data-value="7">7</button>
+    <button class="calculator__key number" data-key="Num" data-value="8">8</button>
+    <button class="calculator__key number" data-key="Num" data-value="9">9</button>
+    <button class="calculator__key operator" data-key="Base" data-value="/">÷</button>
+    <button class="calculator__key operator" data-key="Base" data-value="%">%</button>
+
+    <button class="calculator__key number" data-key="Num" data-value="4">4</button>
+    <button class="calculator__key number" data-key="Num" data-value="5">5</button>
+    <button class="calculator__key number" data-key="Num" data-value="6">6</button>
+    <button class="calculator__key operator" data-key="Base" data-value="*">&times;</button>
+    <button class="calculator__key operator" data-key="Reciprocal"> 1/x</button>
+
+    <button class="calculator__key number" data-key="Num" data-value="1">1</button>
+    <button class="calculator__key number" data-key="Num" data-value="2">2</button>
+    <button class="calculator__key number" data-key="Num" data-value="3">3</button>
+    <button class="calculator__key operator" data-key="Base" data-value="+">+</button>
+    <button class="calculator__key  operator"data-key="Base" data-value="-">-</button>
+    
+    <button class="calculator__key number"data-key="Num" data-value="0">0</button>
+    <button class="calculator__key number"data-key="Num" data-value="00">00</button>
+    <button class="calculator__key operator" data-key="Point">.</button>
+    <button class="calculator__key equal" data-key="Equal">=</button>
+  </div>
+</div>
+    <script src="script.js"></script>
+    <script src = "https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
